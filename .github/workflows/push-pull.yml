@@ -1,0 +1,21 @@
+name: push-pull-demo
+
+'on': 
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  my-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Print message
+        run: echo "Triggered by push or pull reques!"
+    
+
+
+

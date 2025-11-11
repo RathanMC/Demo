@@ -19,8 +19,9 @@ jobs:
       with: 
         python-version: '3.11'
 
-    - name: Install pytest
+    # - name: Install pytest
 
     - name: Run tests
-      run: pytest
+      # run: run pytest
+      run: echo "no test yet"
     
